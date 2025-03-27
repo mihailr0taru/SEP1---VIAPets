@@ -1,0 +1,219 @@
+/*IMPLEMENTATION: MIHAIL ROTARU 355401*/
+@font-face {
+    font-family: 'Modak';
+    src: url(../fonts/Modak-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #ffffff00, #fff, #fff, #fff, #fff, #fff, #ffffff00), url("../images/logoIllustrationpattern.png");
+    background-repeat: repeat;
+}
+
+.body-container .header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+#collapsibleNavbar {
+    justify-content: center;
+}
+
+.navbar-nav li {
+    margin-right: 5vh;
+}
+
+.body-container .navbar-brand {
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container .navbar-brand img {
+    width: 100%;
+}
+
+.body-container .carousel {
+    z-index: -1;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.body-container .carousel img {
+    object-fit: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.bg-blue {
+    background-color: #14274E;
+    transition: 0.3s;
+}
+
+.bg-bluef {
+    background-color: #14274E;
+}
+
+
+.nav-link {
+    font-family: 'Modak';
+    font-size: 2em;
+    color: #9BA4B4;
+    transition: 0.3s;
+}
+
+.nav-link:focus {
+    color: #394867;
+}
+
+.navbar-collapse .bg-blue {
+    background-color: #14274E;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.text-lightblue {
+    color: #9BA4B4;
+}
+
+.navbar-nav .nav-item .active {
+    color: #394867;
+}
+
+h1 {
+    margin-top: 3vh;
+    color: #9BA4B4;
+    font-family: 'Modak';
+    font-size: 3em;
+    text-align: center;
+}
+
+h1 span {
+    color: #14274E;
+}
+
+#cont1 .row .col-md {
+    position: relative;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin-bottom: 2vh;
+}
+
+#cont1 .row .col-md img {
+    width: 100%;
+    position: relative;
+    top: 10%;
+}
+
+#cont1 .row .col-md a {
+    font-family: 'Modak';
+    font-size: 2em;
+    text-decoration: none;
+    color: #9BA4B4;
+}
+
+#cont1 .row .col-md a {
+    font-family: 'Modak';
+    font-size: 2em;
+    text-decoration: none;
+    color: #9BA4B4;
+}
+
+#cont1 .row .col-md a:hover {
+    color: #14274E;
+}
+
+
+
+#cont2 .row .col-md {
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    height: 30vh;
+    background-color: #14274E;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0;
+}
+
+#cont2 .row .col-md a {
+    font-family: 'Modak';
+    font-size: 3em;
+    text-decoration: none;
+    color: #9BA4B4;
+}
+
+#cont2 .row .col-md img {
+    width: 100%;
+
+}
+
+@media (min-width: 575px) {
+    .carousel {
+        top: 0;
+    }
+
+    .bg-blue {
+        background-color: transparent;
+        transition: 0.3s;
+    }
+
+    .bg-blue:hover {
+        background-color: #14274E;
+        transition: 0.3s;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        color: #394867;
+        transition: 0.3s;
+    }
+
+    #cont1 .row .col-md a {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    #cont1 .row .col-md:hover a {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #cont1 .row .col-md p {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    #cont1 .row .col-md:hover p {
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 874px) and (min-width:576px) {
+    .nav-link {
+        font-size: 1.1em;
+    }
+
+    #cont2 .row .col-md a {
+        font-size: 1.8em;
+    }
+
+    #cont1 .row .col-md a
+    {
+        font-size: 1.3em;
+    }
+}

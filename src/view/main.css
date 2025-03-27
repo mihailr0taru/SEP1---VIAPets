@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Modak';
+    src: url(../Modak-Regular.ttf) format('truetype');
+}
+
+#welcomeLabel
+{
+    -fx-font-family: 'Modak';
+    -fx-text-fill: #394867;
+}
+
+.button {
+    -fx-text-fill: #9BA4B4;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: #394867;
+    -fx-border: 0px;
+    -fx-transition: 1s;
+    -fx-font-family: 'Modak';
+    -fx-font-size: 1.5em;
+}
+
+.button:hover
+{
+    -fx-background-color: #14274E;
+    -fx-transition: 1s;
+}
+
+#actionLabel
+{
+    -fx-text-fill: #394867;
+    -fx-font-family: 'Modak';
+}
+
+.root
+{
+    -fx-background-image: url("../logoIllustrationpattern2.png"); /* Overlay image */
+    -fx-background-repeat: repeat;
+    -fx-background-position: center;
+}

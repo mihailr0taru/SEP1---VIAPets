@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Modak';
+    src: url(../fonts/Modak-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #ffffff00, #fff, #fff, #fff, #fff, #fff, #ffffff00), url("../images/logoIllustrationpattern.png");
+    background-repeat: repeat;
+}
+
+.body-container .header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+#collapsibleNavbar {
+    justify-content: center;
+}
+
+.navbar-nav li {
+    margin-right: 5vh;
+}
+
+.body-container .navbar-brand {
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container .navbar-brand img {
+    width: 100%;
+}
+
+.body-container .carousel {
+    z-index: -1;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.body-container .carousel img {
+    object-fit: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.bg-blue {
+    background-color: #14274E;
+    transition: 0.3s;
+}
+
+.bg-bluef {
+    background-color: #14274E;
+}
+
+
+.nav-link {
+    font-family: 'Modak';
+    font-size: 2em;
+    color: #9BA4B4;
+    transition: 0.3s;
+}
+
+.nav-link:focus {
+    color: #394867;
+}
+
+.navbar-collapse .bg-blue {
+    background-color: #14274E;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.text-lightblue {
+    color: #9BA4B4;
+}
+
+.col-md {
+    z-index: 1;
+    object-fit: cover;
+}
+
+.col-md #bob {
+    max-width: 50%;
+    animation: border-pulsate 3s infinite;
+}
+
+.container .button {
+    width: fit-content;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #394867;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #9BA4B4;
+    font-family: 'Modak';
+    font-size: 1.5em;
+}
+
+@keyframes border-pulsate {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #14274eb6;
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 2vw #3948673c;
+    }
+
+    90% {
+        -webkit-box-shadow: 0 0 0 3vw #9ba4b407;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+}
+
+h1
+{
+    color: #9BA4B4;
+    font-family: 'Modak';
+    font-size: 2em;
+    text-align: center;
+}
+
+h1 span
+{
+    color: #14274E;
+}
+
+@media (min-width: 575px) {
+    .carousel {
+        top: 0;
+    }
+
+    .bg-blue {
+        background-color: transparent;
+        transition: 0.3s;
+    }
+
+    .bg-blue:hover {
+        background-color: #14274E;
+        transition: 0.3s;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        color: #394867;
+        transition: 0.3s;
+    }
+
+
+    .container .button:hover {
+        background-color: #14274E;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 874px) and (min-width:576px) {
+ .nav-link
+ {
+    font-size: 1.1em;
+ }   
+}

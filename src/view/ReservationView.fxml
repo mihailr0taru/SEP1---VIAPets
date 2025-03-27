@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReservationViewController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0" spacing="20.0">
+            <children>
+                <Button mnemonicParsing="false" text="Manage" />
+                <Button fx:id="addNewButton" mnemonicParsing="false" onAction="#handleActions" text="Add New" />
+            </children>
+        </HBox>
+        <HBox layoutY="367.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="185.0" spacing="3.0">
+            <padding>
+                <Insets left="5.0" right="20.0" top="3.0" />
+            </padding>
+            <children>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleActions" prefHeight="26.0" prefWidth="151.0" text="Back to the main page">
+                    <HBox.margin>
+                        <Insets bottom="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <VBox layoutX="6.0" layoutY="50.0" prefHeight="315.0" prefWidth="355.0">
+            <children>
+                <TextField fx:id="searchField" onAction="#handleActions" text="Search by...." />
+                <TableView fx:id="KennelTableView" onSort="#handleActions" prefHeight="290.0" prefWidth="0.0">
+                    <columns>
+                        <TableColumn fx:id="costumerColumn" maxWidth="100.0" prefWidth="100.0" text="Customer" />
+                        <TableColumn fx:id="startDateColumn" maxWidth="70.0" prefWidth="70.0" text="Start Date" />
+                        <TableColumn fx:id="endDateColumn" maxWidth="70.0" prefWidth="70.0" text="End Date" />
+                        <TableColumn fx:id="priceColumn" prefWidth="70.0" text="Price" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <GridPane layoutX="365.0" layoutY="67.0" prefHeight="255.0" prefWidth="213.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="124.20001220703125" minWidth="10.0" prefWidth="61.8" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="151.39999999999998" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="name" GridPane.rowIndex="1" />
+                <Label text="age" GridPane.rowIndex="2" />
+                <Label text="color" GridPane.rowIndex="3" />
+                <Label text="gender" GridPane.rowIndex="4" />
+                <Label fx:id="petSpec1Label" text="watertype" GridPane.rowIndex="6" />
+                <Label fx:id="petSpec2Label" text="predator" GridPane.rowIndex="7" />
+                <Label text="type" />
+                <Label text="comment" GridPane.rowIndex="5" />
+                <TextField fx:id="petNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="petAgeField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="petColorField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="petGenderField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="petCommentField" prefHeight="73.0" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="petSpec1Field" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextField fx:id="petSpec2Field" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <TextField fx:id="petTypeField" GridPane.columnIndex="1" />
+            </children>
+        </GridPane>
+        <Label layoutX="389.0" layoutY="50.0" text="Pet Information" />
+        <Button fx:id="deleteButton" layoutX="460.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleActions" text="Delete" />
+    </children>
+</AnchorPane>
