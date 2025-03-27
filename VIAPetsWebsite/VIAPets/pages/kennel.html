@@ -1,0 +1,211 @@
+<!--IMPLEMENTATION: CAROLINA VALENCIA ZAVIDEI 354825-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styleKennel.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/kennel.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>VIAPets - Kennel</title>
+    <link rel="icon" href="../images/icon.png">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="body-container">
+        <div class="header">
+            <nav class="navbar navbar-expand-sm bg-blue navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/path6.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutUs.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="kennel.html">Kennel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <br><br><br><br>
+        <div class="container-fluid">
+            <h1>Kennel Page</h1>
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-sm-5">
+                    <h2>Welcome to our kennel services!</h2>
+                    <p> Welcome to VIAPets Kennel Services, where your pet is treated as a Very Important Animal!
+                        Whether you're traveling, attending business trips, or simply need a reliable place for your
+                        furry friend, VIAPets offers a cozy, caring environment that ensures the comfort and well-being
+                        of each pet. Our team of experienced caregivers is dedicated to creating a home-away-from-home
+                        for cats, dogs, and birds. With a commitment to safety and love for animals, VIAPets is the
+                        perfect choice to provide the best care for your beloved companion.</p>
+                </div>
+                <div class="col-sm-5">
+                    <div class="image-container">
+                        <img src="../images/cat and fish.jpg" alt="Cat and a fish image" class="img-fluid rounded">
+                        <img src="../images/kennel dogs.jpg" alt="Kennel dogs" class="img-fluid rounded hover-image">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center mt-2">
+                <div class="col-sm-5">
+                    <div class="image-container">
+                        <img src="../images/happy dogs.jpg" alt="Happy dogs image" class="img-fluid rounded">
+                        <img src="../images/birds.jpg" alt="Birds" class="img-fluid rounded hover-image">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <center>
+                        <h2>How our kennel services work?</h2>
+                    </center>
+                    <ul>
+                        <li><b><i>Check Availability: <a href="#date-picker-section">(Click here to check
+                                        availability!)</a></i></b> On our website, below this page, you can see the
+                            number of
+                            open spots in our kennel.</li>
+                        <li><b><i>Get in Touch:</i></b> Contact us by phone or visit our shop to confirm availability
+                            and reserve a spot.</li>
+                        <li><b><i>Provide Pet Details:</i></b> Share essential information about your pet, including
+                            breed, age, and specific needs, so we can cater to them accordingly.</li>
+                        <li><b><i>Book Your Dates:</i></b> Schedule your pet's stay based on your travel plans, ensuring
+                            a comfortable experience.</li>
+                        <li><b><i>Confirm and Drop Off:</i></b> Finalize the booking and drop off
+                            your pet on the agreed date. Our team will give them a warm welcome and make them feel at
+                            home.</li>
+                    </ul>
+                </div>
+            </div>
+            <center>
+                <h3 id="date-picker-section">See available kennel rooms >> </h3>
+            </center>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-5 mb-3 mb-sm-0">
+                    <label for="datePicker1">Select Check-in Date:</label>
+                    <input type="date" id="datePicker1" class="form-control" placeholder="YYYY-MM-DD">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-5 mb-3 mb-sm-0">
+                    <label for="datePicker1">Select Check-out Date:</label>
+                    <input type="date" id="datePicker2" class="form-control" placeholder="YYYY-MM-DD">
+                </div>
+            </div>
+            <center><button class="button-27" role="button" id="selectDate">Select </button></center>
+            <div class="row justify-content-center">
+                <div class="col-sm-5">
+                    <h4>Number of kennels available in the selected period of time:</h4>
+                </div>
+                <div class="col-sm-5">
+                    <div class="border rounded p-3 text-center"
+                        style="background-color: #f8f9fa; font-size: 1.5em; color: #394867;">
+                        <span id="availableKennels">-</span>
+                    </div>
+                </div>
+                <div class="col-sm-5 d-flex align-items-center">
+                    <h4>To make a reservation please visit our shop or contact us.</h4>
+                </div>
+                <div class="col-sm-5 d-flex align-items-center">
+                    <a class="button-27" href="contact.html">Contact Page</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--FOOTER-->
+        <footer class="bg-bluef text-white pt-5 pb-4">
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-lightblue " style="font-family: 'Modak';">
+                            VIAPets</h5>
+                        <p>Your trusted local pet shop and kennel, offering quality care and a variety of lovable,
+                            adoptable pets. At VIAPets, we’re committed to exceptional service and creating a welcoming
+                            home-away-from-home for your furry friends</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-lx-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-lightblue" style="font-family: 'Modak';">
+                            Contact</h5>
+                        <p>
+                            <i class="fa-solid fa-home mr-3"></i> 8700 Horsens, Denmark
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot mr-3"></i> Banegårdsgade 2
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-envelope mr-3"></i> support@viapets.dk
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone mr-3"></i> +45 87 55 00 20
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-lx-2 mx-auto mt-3">
+                        <img src="../images/path6.png" style="width: 100%;" alt="logo" class="invert">
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8" style="width: fit-content; padding:0 15%;">
+                        <p>Copyright ©2024 All rights reserved by:
+                            <a href="#" style="text-decoration: none ;">
+                                <strong class="text-lightblue">VIAPets Inc.</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4 font-fa">
+                        <div class="text-center text-md-left">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/viauniversitycollege/"
+                                        class="btn-floating btn-sm text-white" style="font-size: 23px;"
+                                        target="_blank"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://twitter.com/VIAuniversity" class="btn-floating btn-sm text-white"
+                                        style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"
+                                        target="_blank"><i class="fab fa-google-plus"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://dk.linkedin.com/school/via-university-college/"
+                                        class="btn-floating btn-sm text-white" style="font-size: 23px;"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.youtube.com/@VIAuc" class="btn-floating btn-sm text-white"
+                                        style="font-size: 23px;" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
